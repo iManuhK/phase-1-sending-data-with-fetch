@@ -1,0 +1,96 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2024-04-03T18:50:37.327Z",
+    "end": "2024-04-03T18:50:37.571Z",
+    "duration": 244
+  },
+  "tests": [
+    {
+      "title": "makes a POST request to /users with a name and email",
+      "fullTitle": "submitData() makes a POST request to /users with a name and email",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    },
+    {
+      "title": "handles the POST request response, retrieves the new id value and appends it to the DOM",
+      "fullTitle": "submitData() handles the POST request response, retrieves the new id value and appends it to the DOM",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    },
+    {
+      "title": "handles a failed POST request using catch, appends the error message to the DOM",
+      "fullTitle": "submitData() handles a failed POST request using catch, appends the error message to the DOM",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "makes a POST request to /users with a name and email",
+      "fullTitle": "submitData() makes a POST request to /users with a name and email",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    },
+    {
+      "title": "handles the POST request response, retrieves the new id value and appends it to the DOM",
+      "fullTitle": "submitData() handles the POST request response, retrieves the new id value and appends it to the DOM",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    },
+    {
+      "title": "handles a failed POST request using catch, appends the error message to the DOM",
+      "fullTitle": "submitData() handles a failed POST request using catch, appends the error message to the DOM",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}",
+        "type": "system",
+        "errno": "ERR_NOCK_NO_MATCH",
+        "code": "ERR_NOCK_NO_MATCH",
+        "stack": "FetchError: request to http://localhost:3000/users failed, reason: Nock: No match for request {\n  \"method\": \"GET\",\n  \"url\": \"http://localhost:3000/users\",\n  \"headers\": {\n    \"accept\": [\n      \"*/*\"\n    ],\n    \"user-agent\": [\n      \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n    ],\n    \"accept-encoding\": [\n      \"gzip,deflate\"\n    ],\n    \"connection\": [\n      \"close\"\n    ]\n  }\n}\n    at OverriddenClientRequest.<anonymous> (node_modules/node-fetch/lib/index.js:1461:11)\n    at OverriddenClientRequest.emit (node:events:518:28)\n    at Socket.<anonymous> (node_modules/propagate/index.js:64:17)\n    at Socket.emit (node:events:518:28)\n    at /Users/emmanuel/Development/code/phase-1/phase-1-sending-data-with-fetch/node_modules/nock/lib/socket.js:100:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"
+      }
+    }
+  ],
+  "passes": []
+}
